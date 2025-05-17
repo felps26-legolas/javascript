@@ -1,0 +1,38 @@
+sistemas operacionais 
+
+GERENCIAMENTO DE MEMORIA
+
+MEMÓRIA RAM -> Primeiro estágio de memória , mais rápida na comunicação com o processador , memória volátil (se perde ao desligar o computador)
+
+MEMÓRIA HD -> Memória secundária , usada para armazenamento permanente , mais lenta que a RAM e usada como complemento da memória principal
+
+MEMÓRIA CACHE -> Memória com alta velocidade , fica dentro do processador , mais rápida que a RAM , Mais lenta que os registradores
+
+REGISTRADORES -> Pequena memória interna do processador , armazena dados temporários , são os mais rápidos , porém limitados em capacidade
+
+DIFERENÇAS DE VELOCIDADE -> Níveis diferentes de memória , se comunicam em velocidades diferentes 
+
+->O gerenciamento permite ao sistema equilibrar desempenho e custo , usando cada tipo de memória de forma eficiente 
+
+FUNÇÕES DO GERENCIADOR DE MEMÓRIA -> Alocar na memória p / os processos identificar uso e espaço livre 
+
+->Organizar entrada e saída de dados na memória 
+
+ALGORITMOS DE ALOCAÇÃO DE MEMÓRIA -> Usado para definir onde os processos serão alocados na memória :
+
+BEST FIT ->Escolhe a menor região livre que acomode o processo 
+
+WORST FIT ->Escolhe a primeira região livre disponivel
+
+MEMÓRIA VIRTUAL  -> Técnica usada quando a memória RAM é insuficiente , usa parte do HD como complemento da RAM , permite o Sistema operacional
+simular uma grande memória usando Disco 
+
+SEGMENTAÇÃO -> Divide o programa em segmentos (dados , instruções , etc) , cada segmento pode ter tamanhos diferentes e não precisa estar em 
+posições adjacentes 
+
+->Apenas os segmentos necessários são carregados na RAM 
+
+->Se um segmento não estiver na RAM , o sistema busca no HD 
+
+ 
+

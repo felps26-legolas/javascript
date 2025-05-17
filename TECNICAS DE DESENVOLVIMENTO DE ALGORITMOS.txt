@@ -1,0 +1,35 @@
+TECNICAS DE DESENVOLVIMENTO DE ALGORITMOS
+
+DESCRIÇÃO NARRATIVA -> É a tecnica que analisa o enunciado do problema e escreve
+, utilizando uma linguagem natural os passos para serem seguidos para sua resolu
+ção
+
+->A vantagem da descrição narrativa é que por utilizar uma linguagem natural,
+não é preciso aprender nenhuma outra nova linguagem
+
+->A desvantagem de que as linguagens naturais permitem várias interpretações
+, além de muito diferentes das linguagens de programação
+
+->O que dificulta a transcrição de um algoritmo para uma programa
+
+FLUXOGRAMA -> Consiste em analisar o enunciado do problema e escrever , utilizando
+símbolos gráficos pré-definidos para sua resolução
+
+->A vantagem do fluxograma é que a utilização de elementos gráficos permite
+a facil compreensão dos elementos que compõem o processamento de dados
+
+->São facilmente identificadas as entradas , o processamento e a saída
+
+->A sua desvantagem de ter de aprender a simbologia dos fluxogramas e, normal
+mente , a falta de detalhes dificulta a transcrição para um programa utilizando
+uma linguagem de programação
+
+PSEUDOCÓDIGO -> Pseudo código ou portugol é a ténica mais utilizada e analisa 
+o enunciado do problema escrevendo, por meio de regras predefinidas 
+
+->Também conhecidas como códigos , os passos a serem seguidos para sua resolução
+
+->A vantagem da utilização do pseudocódigo é que a passagem do algoritmo para uma
+linguagem de programação é quase direta, , cosnsistindo na grande maioria das
+vezes em uma espécie de tradução
+

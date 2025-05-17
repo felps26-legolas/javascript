@@ -1,0 +1,29 @@
+FERRAMENTAS PARA MODELAGEM DE DADOS ER
+
+O QUE SÃO FERRAMENTAS CASE -> CASE(Computer-aided software engineering) , tradução(engenhraria
+de software por computador)
+
+-> Sua utilização permite que os projetistas e outros envolvidos no processo de desenvolvimento
+do projeto de banco de dados compartilhem um visão comum de cada estágio de desenvolvimento
+
+->ajudam a garantir um processo disciplinado além de retratar o progresso (ou falta dele)
+graficamente
+
+BENEFICIOS -> Possibilidade de faazer com que o cliente faça parte do processo(através de 
+diagramas ou análise de regras de negócio) de forma mais dinamica e assertiva
+
+VANTAGENS -> Possibilidade de criar scripts SQL a partir de um diagrama de entidade-relacionamento
+(DER)
+
+-> O SQL é uma linguagem utilizada para armazenar e gerenciar dados no SGBD 
+
+->Primeira linguagem comercial introduzida para o modelo relacional do E
+
+->SQL é usado para criar e excluir tabelas , inserir, atualizar e excluir dados, e exibir
+dados em um SGBD
+
+BRMODELO -> É uma ferramenta freeware que possibilita o desenvolvimento de diagramas DER,
+modelo lógico
+
+->E exportar esse artefatos em formato de scripts SQL para criação de tabelas no banco de dados
+

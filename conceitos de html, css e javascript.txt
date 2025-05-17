@@ -1,0 +1,131 @@
+table -> cria uma tabela
+
+TR ->representa uma linha
+TH ->Cabeçalho da coluna
+TD ->Células com dados
+
+FORMULÁRIOS -> form -> Define o formulário
+
+ACTION -> URL para onde os dados serão enviados
+METHOD -> Método de envio  (POST ou GET)
+
+LABEL -> Associa um texto ao campo de entrada 
+
+INPUT -> Campos para entrada de dados
+
+tipos comuns -> text , email , password , submit
+
+BUTTON -> Um botão para enviar o formulário
+
+ESTRUTURA BÁSICA DE UMA REGRA CSS -> Seletor{
+                                             propriedade: valor ;}
+
+TIPOS DE SELETORES 
+
+POR TAG -> Alvo -> todos os elementos com essa tag 
+
+POR CLASSE -> Alvo -> Todos os elementos com uma classe especifica (usando .classe) ex: .destaque{ color: red;}
+
+<p class ="destaque"> texto vermelho </p>
+
+POR ID -> Alvo -> um elemento especifico com um ID (usando #ID)
+
+COMBINAÇÕES DE SELETORES 
+
+ALVO ELEMENTO DENTRO DE OUTROS -> header h1 {color; red;}
+
+ALVO MULTIPLOS ELEMENTOS -> h1 , h2 , p {font-family: arial, sans-serif;}
+
+PROPRIEDADES COMUNS
+
+COR E FUNDO 
+
+COR DO TEXTO -> Color : red ; 
+
+COR DE FUNDO -> Background-color : cor escolhida; 
+
+FONTE E TEXTO 
+
+FONTE -> font-family: arial , sans-serif;
+
+font-size : 16px ; (tamanho  da fonte)
+
+font-weight: bold; (negrito)
+
+font-style: italic; (itálico)
+
+ESPAÇAMENTO ENTRE LINHAS E LETRAS ->  Line-height: 1.5; (altura da linha)
+
+letter-spacing: 2px; (espaçamento entre letras)
+
+MARGENS E PREENCHIMENTO 
+
+MARGEM -> Espaço fora do elemento ex -> (margin : 20px )
+
+PREENCHIMENTO (PADDING): Espaço dentro do elemento -> padding : 10px; (adiciona espaço interno)
+
+BORDA -> PERSONALIZA BORDAS -> border : 2px solid black ; (largura estilo e cor)
+
+border-radius :10px ; (deixas bordas arredondadas)
+
+DIMENSÕES -> Define largura e altura do elemento 
+
+width :100px -> altura
+height : 50px; -> largura
+
+COMPORTAMENTO E INTERAÇÕES 
+
+EFEITOS AO PASSAR O MOUSE (HOVER) -> Altera o estilo quando o mouse está sobre o elemento 
+
+button:hover {background-color:green; color : white;}
+
+TRANSIÇÕES (EFEITOS SUAVES)
+
+Cria uma animação suave entre estilos :
+
+button {transition : background-color 0.3 ease;}
+
+LAYOUT COM FLEXBOX 
+
+DEFINIR UM CONTAINER FLEXIVEL - > Display : flex ;
+
+CONTROLAR O ALINHAMENTO E ESPAÇAMENTO DOS ITENS DENTRO DO CONTAINER :
+
+Justify-content -> Alinha horizontalmente 
+
+Align-items -> Alinha verticalmente
+
+flex-wrap -> Controla quebra de linha
+
+LAYOUT COM GRID -> CSS GRID é uma ferramenta para criar layouts em 2 dimensões (linhas e colunas)
+
+ESTRUTURA BÁSICA DE UM GRID 
+
+display: grid;
+
+gird-template-columns: repeat (3, 1fr); -> 3 colunas de tamanho igual
+
+grid-gap: 10px; /*espaço entre os itens*/
+
+RESPONSIVIDADE COM MÉDIA QUERIES 
+
+O QUE É RESPONSIVIDADE? É o ajuste automático de um site para diferentes tamanhos de tela , você pode definir estilos
+diferentes com base no dispositivo e o tamanho de tela
+
+SINTAX DE MÉDIA QUERIES -> @media (condição) {/*estilo para a condição*/}
+
+EXEMPLO BÁSICO -> @media (max-width: 768px) { body {background-color: lightblue;}}
+
+JAVASCRIPT INTRODUÇÃO -> .STRING (Texto)
+
+.NUMBER (Número): 42
+
+.BOOLEAN (verdadeiro/ falso) : true ou false
+
+.ARRAY (Lista): ["maçã" ,"banana" ]
+
+.OBJETO {Nome: "filipe" , idade: 22}
+
+
+
+

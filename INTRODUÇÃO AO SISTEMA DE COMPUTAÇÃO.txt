@@ -1,0 +1,35 @@
+INTRODUÇÃO AO SISTEMA DE COMPUTAÇÃO
+
+->Os primeiros computadores surgiram em 1970 dando origem aos microcomputadores
+
+->Com o passar do tempo , foram expandindo os negócios e sendo úteis para
+todos os segmentos
+
+->Ainda existia certa dificuldade em relação ao desenvolvimento de hardware 
+e software 
+
+->Com a popularização dos computadores , em 1974 , surgiram os microcomputadores
+
+->Visando aumentar a capacidade de processamento dos equipamentos
+
+->A partir do uso de circuitos integrados
+
+->Com o passar do tempo os computadores forneceram aos usuarios maior capacida
+de de processamento 
+
+->Acesso a internet e conexão para dispositivos de impressão , scanner , CD-ROM
+entre outros
+
+1990 ->Teve a explosão da internet , surgiram como os principais navegadores
+protocolos que permitiam a comunicação e interface entre os usuarios e as 
+aplicações
+
+->Na mesma época surgiram os sistemas operacionais
+
+2003 -> Surgimento das redes sociais
+
+->Os usuarios passaram a se comunicar cada vez mais , buscando nessas redes
+informações em diversas áreas
+
+->Incluindo oportunidades profissionais , lazer ate mesmo atividades que passa
+ram a envolver o comércio

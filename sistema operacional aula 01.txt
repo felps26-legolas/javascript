@@ -1,0 +1,106 @@
+AULA SISTEMA OPERACIONAL
+
+->O sistema operacional facilitou a vida dos desenvolvedores , sem que precisassem
+se preocupar com as especificações do computador , tendo que lidar apenas com a 
+parte lógica do computador.
+
+->O SO é uma camada entre hardware e aplicação / fornece maior racionalidade ,portabilidade
+e dedicação.
+
+SUAS PRINCIPAIS FUNÇÕES SÃO:
+
+->Uso eficiente e controlado dos componentes de hardware
+
+->Maquína mais flexivel
+
+->Permite uso compartilhado , eficaz , protegido e seguro dos vários componentes de hardware
+e de software por diversos usuarios 
+
+->Prover mecanismos de gerenciamento de processos , como: criação, escalonamento
+controle de concorrencia , proteção e destruição
+
+->Cabe ao SO esconder ou tornar transparente aos aplicativos os detalhes do hardware
+
+OS SERVIÇOS QUE OFERECE 
+
+
+->Meios para criação de programas 
+
+->Execução de programas como mecanismo para carregar na memoria, ler , escrever dados
+e inicialização de arquivos 
+
+->Acesso i/o e arquivos negociando as especificidades e formatos de arquivos
+
+->Proteção e acesso a recursos e dados
+
+->detectar erros e responder aos erros
+
+->fornecer estatisticas dos recursos
+
+->Monitorar performance
+
+BATCH -> Processamento em lote, usado para enfileirar tarefas
+
+SPOOLING - >Processo de transferencia de dados  , colocando-os em uma area de trabalho temporária
+em que outro programa poderá acessa-lo
+
+TIME SHARING -> Tempo repartido que utiliza multiprogramação dividindo o tempo de 
+processamento da CPU entre os processos ativos
+
+TIME-SLICE -> Uma fatia de tempo do TIME-SHARING
+
+REAL-TIME -> Sistema com tempo de resposta predefinidos
+
+INTERAÇÃO COM O SO
+
+-> A maioria dos SOS permite interaçao direta com o usuario 
+
+->A interface de terminal permite que o usuario envie comandos pertencentes a uma linguagem de
+comunicação chamada linguagem de comando
+
+->A qual funciona com teclado e mouse , a partir de um prompt ou uma tela de acesso simples ,
+os comandos são digitados e interpretados pelo shell , um interpretador de comandos
+
+-> A interface textual é baseada em texto , menus , janelas e botões
+
+->A interface gráfica além de exibir menus , janelas e botões , apresenta elementos
+gráficos , como ícones , figuras e imagens.
+
+TIPOS DE SISTEMA OPERACIONAL
+
+->Há varias maneiras de classificar um SO , o SO pode ser serial , isto é, ter
+todos os recursos dedicados a um único programa até seu término ou ser concorrente
+
+->No qual estes recursos são reassociados entre uma coleção de programas ativos em 
+diferentes estágios de execução
+
+-> Outra classificação é referente ao compartilhamento do hardware, que podem ser 
+monoprogramados ou multiprogramados
+
+MONOPROGRAMADOS -> Permite apenas um programa ativo em um periodo de tempo, o qual
+permanece na memória até seu término.
+
+MULTIPROGRAMADOS-> Mantem mais de um programa simultaneamente na memória principal
+a fim de posibilitar o compartilhamento efetivo do tempo da CPU e dos demais recursos 
+
+OS SOS PODEM SER CLASSIFICADOS QUANTO AO TEMPO DE RESPOSTA, SE SERÁ BATCH OU INTERATIVO
+
+->Nos SOS em batch , os jobs são submetidos em ordem sequencial de execução e, enquanto
+ocorre o processamento , o usuario fica sem interação , até o término da execução dos jobs.
+
+-> Os SOS interativos possibilitam o diálogo com o usuario, podendo ser projetados
+como sistemas monousuários ou multiusuarios , usando conceitos de multiprogramação
+e time-sharing
+
+->Os sistemas monousuarios só permitem que um usuario possa interagir com o sistema, como
+foi o caso do SO MS-DOS 
+
+->O SO é dito multiusuario quando provê atendimento a mais de um usuario , como ocorre com o Unix
+e o Lunix
+
+A Multiprogramação é capacidade de o sistema permitir que mais de um programa esteja
+presente na memória principal 
+
+Em contraste à MONOPROGRAMAÇÃO em que apenas um programa reside na memória 
+principal
+

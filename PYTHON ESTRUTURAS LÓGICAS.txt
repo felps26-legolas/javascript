@@ -1,0 +1,88 @@
+PYTHON 4 ESTRUTURAS LÓGICAS
+
+OPERADORES ARITMÉTICOS -> Para a realização de cálculos matemáticos temos de utilizar 
+os operadores aritméticos 
+
+ADIÇÃO -> +
+SUBTRAÇÃO -> -
+MULTIPLICAÇÃO -> *
+DIVISÃO REAL -> /
+DIVISÃO INTEIRO -> //
+EXPONECIAÇÃO -> **
+RESTO DA DIVISÃO -> %
+
+OPERADORES RELACIONAIS -> Utilizamos para comparação de valores ou uma variavel que pode
+assumir valor booleano true ou false
+
+->Também utilizamos operadores relacionais para comparar caracteres , números , variaveis 
+e expressões 
+
+->No python os operadores são representados da seguinte forma 
+
+IGUAL A -> ==
+DIFERENTE DE -> !=
+MAIOR QUE -> >
+MENOR QUE -> <
+MAIOR OU IGUAL -> >=
+MENOR OU IGUAL -> <=
+
+OPERADORES LÓGICOS -> São utilizados para combinar resultados de expressões, retornando se
+o resultado final é true ou false
+
+->No python são representados por:
+
+ALGORITMO      PYTHON 
+
+E               AND
+OU              OR
+NÃO             NOT
+
+IDENTAÇÃO -> É  a forma de arrumar o código, fazendo com que algumas linhas fiquem mais à direita que
+outras , à medida que adicionamos espaços em seu inicio
+
+->É uma caracteristica importante do python ,pois é essencial para o bom funcionamento do código
+
+IMPORTANTE -> A linguagem python requer uma identação padronizada , a identação é apenas uma boa prática,
+mas não é obrigatória 
+
+ESTRUTURA DE DECISÃO -> A estrutura de decisão, também conhecida como estrutura condicional, tem como finalidade
+comparar e efetuar um desvio de processamento do programa 
+
+ESTRUTURA DE DECISÃO SIMPLES IF (SE) 
+
+->A estrutura de condição if permite avaliar uma expressão e , se o resultado for verdadeiro, será executada
+uma determinada ação 
+
+ UTILIZANDO OS COMANDOS IF - ELIF - ELSE
+
+->Se existir mais de uma condição alternativa que precise ser verificada , utilizamos a condição 
+ELIF
+
+ESTRUTURAS DE REPETIÇÃO 
+
+->Também conhecidas como laços de repetição , permitem que um conjunto de instruções seja executado,
+até que uma determinada condição seja verdadeira , são elas
+
+->For (para)  e While(enquanto)
+
+ESTRUTURA FOR -> Utilizamos a estrutura for quando sabemos quantas vezes o laço de programação deverá
+ser executado 
+
+->Ela aceita sequencias estáticas e geradas por ITERADORES
+
+->ITERADORES são estruturas que permitem acesso a vários itens de uma coleção de elementos , de forma sequencial
+
+->Durante a execução de uma estrutura for , o contador aponta para um elemento de uma determinada sequencia 
+
+->A cada iteração, o contador é atualizado para que o laço FOR processe os elementos correspondentes 
+
+ESTRUTURA WHILE (ENQUANTO)
+
+->Executa um determinado conjunto de instruções, enquanto a condição verificada no inicio permanecer verdadeira
+
+->Diferente da estrutura For (para), não é necessário determinar o número de vezes que a condição será executada
+
+SINTAX DA ESTRUTURA WHILE : 
+
+While condição 
+{bloco de código}

@@ -1,0 +1,75 @@
+ESTRUTURA GERAL DE UM ALGORITMO
+
+ESTRUTURA SEQUENCIAL DE ALGORITMOS
+
+->Um fluxograma tem, no mínimo, 3 elementos , ou seja, o inicio , o processamento
+e o fim
+
+->Fluxogramas utilizam variáveis, mas não fazem suas declarações ou detalhamento
+
+->Já o portugol ou pseudo código, existe uma seção especifica para suas declarações
+
+->Esta seção deve começar com a palavra var, seguida da lista de variaveis e de
+seus respectivos tipos 
+
+ex: var lista_de_variaveis: tipo
+
+->Os tipos de dados mais utilizados são :numéricos, literal e lógico , descritos
+a seguir , segundo Ascencio e campos
+
+NUMÉRICO -> Os dados numéricos dividem-se em dois grupos e reais
+
+LÓGICO -> São também chamados dados booleanos (por causa da algebra de boole)
+
+LITERAL OU CARACTERE ->São dados formados por um único caractere ou por uma cadeia
+de caracteres 
+
+->Estes caracteres podem ser letras maiusculas , as minusculas os números
+
+->Os identificadores são os nomes das variaveis , dos programas , das contantes
+,das rotians , das rotinas , das unidades etc.
+
+->As regras básicas para a formação dos identificadores são:
+
+->Os caracteres que você pode utilizar na formação dos identificadores são :
+os numeros, letras maiusculas , minusculas, e o caractere sublinhado
+
+->O primeiro caractere deve ser sempre uma letra ou caractere sublinhado
+
+->Não são permitidos espaços em branco e caracteres especiais 
+
+->Não podemos usar as palavras reservadas nos identificadores , ou seja , palavras
+que pertencem a uma linguagem de programação
+
+-> O comando de atribuição é utilizado para atribuir  valores a variaveis , sendo
+representado pelos simbolos , ->Retangulo / pseudo código: <-
+
+->O comando de entrada é utilizado para receber dados digitados pelo usuario 
+
+->Os dados recebidos são armazenados em variaveis é representado por : 
+retangulo com angulo / pseudo código : LEIA nome_da_variavel
+
+->O comando de saída é utilizado para mostrar dados na tela  ou na impressora,
+este comando é representado por :
+
+->quadrado com ondas embaixo / pseudo código : ESCREVA(nome_da_váriavel )
+
+->Nos algoritmos , também utilizamos os operadores matemáticos e este seguem
+as mesmas prioridades da matemática
+
++ soomar
+- subtrair
+* multiplicar
+/ dividir
+
+->A estrutura mínima de um algoritmo consiste em receber dados , fazer o processamento
+e gerar uma saída
+
+EXEMPLO 
+
+1- Faça um algoritmo para calcular a média aritmética entre duas notas 
+
+inicio -> nota 1 nota2 -> média = (nota1 + nota2) -> "média=", média -> fim
+
+
+

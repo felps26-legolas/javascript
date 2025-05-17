@@ -1,0 +1,76 @@
+ESTRUTURA DE DADOS LINEARES AULA 04
+
+ESTRUTURA DE DADOS DINÂMICAS
+
+LISTAS LIGADAS
+
+.Armazenam elementos de forma sequencial , com cada elemento , contendo o valor e o endereço do proximo elemento 
+
+.As listas suportam operações de consulta (busca, maior valor , sucessor/predecessor) e operações modificadoras (inserção , remoção)
+
+.O algoritmo de busca em uma lista ligada percorre a lista comparando o valor procurado com ovalor da celula atual
+
+INSERÇÃO  E REMOÇÃO EM LISTAS LIGADAS
+
+.A inserção em uma lista ligada aloca uma nova celula, atribui o valor a ser inserido e atualiza os ponteiros
+
+.A remoção envolve buscar o elemento , identifica-lo , "desconecta-lo" da celula , mantendo os endereços da celula atual e da proxima 
+
+.Algoritmos podem ser adaptados para identificar menor/maior valor , sucessor ou predecessor em listas ligadas
+
+LISTAS DUPLAMENTE LIGADAS 
+
+.Possuem tres membros : valor do elemento e os endereços dos elementos anterior e posterior
+
+.A vantagem é melhor acessibilidade , mas com o custo de mais ponteiros e maior trabalho de manutenção
+
+.A identificação do primeiro e do ultimo elemento pode ser feita a partir dos ponteiros nulos para anterior e posterior
+
+OPERAÇÕES DAS LISTAS DUPLAMENTE LIGADAS
+
+.A busca é similar à lista ligada simples , mas utilizando o membro "posterior"
+
+.A inserção envolve alocar uma nova célula , atualizar os ponteiros da nova célula e ajustar os ponteiros da lista
+
+.A remoção conecta as células vizinhas à celula a ser removida , exigindo tratamento especial para a remoção do primeiro elemento 
+
+VARIAÇÕES DAS LISTAS LIGADAS E FILAS DINAMICAS
+
+.Variações incluem lisats ligadas circulares e listas duplamente ligadas circulares
+
+.Filas dinâmicas , implementadas sobre a lista , utilizam a regra FIFO 
+
+.Uma fila dinâmica é composta por ponteiros head e tail , indicando  o inicio e fim da fila
+
+OPERAÇÕES EM FILAS DINÂMICAS 
+
+.A inserção (enqueue) aloca uma nova célula , atribui o valor e a insere no final da fila , atualizando o ponteiro tail
+
+.A remoção (dequeue) remove o elemento do inicio da fila (head), atualizando o ponteiro head, e retornando o valor removido
+
+.A fila dinamica nao tem limite de armazenamento predefinido , ao contrário da fila estática
+
+PILHAS DINAMICAS
+
+.Seguem a regra LIFO (LAST IN FIRST OUT)
+
+.As operações incluem empilhar (push) e desempilhar (pop)
+
+.A operação push aloca uma nova célula e a insere no topo da pilha 
+
+OPERAÇÕES POP E ALGORITMOS DE CLASSIFICAÇÃO
+
+.A operação pop remove o elemento do topo da pilha , atualizando o ponteiro para o novo topo
+
+.O algoritmo de ordenação por inserção (insertion sort) em estruturas dinâmicas envolve remover elementos da lista inicial e inseri-los
+ordenadamente em uma nova lista
+
+.O procedimento inserir () cria ponteiros para a posição inicial e a posição de inserção do elemento X
+
+FINALIZAÇÕES DO INSERTION SORT E PESQUISA EM ESTRUTURAS DINÂMICAS
+
+.O algoritmo insertion sort() finaliza quando todos os elementos são transferidos para a nova lista
+
+.A pesquisa sequencial em estruturas dinâmicas é similar à abordagem estática
+
+.A pesquisa binária em listas ligadas é problemático devido à dificuldade de indentificar o ponto médio da lista

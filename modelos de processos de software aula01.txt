@@ -1,0 +1,126 @@
+MODELOS DE PROCESSOS DE SOFTWARE
+
+PRINCIPIOS
+
+CICLO DE VIDA DE SOFTWARE
+
+.Fases de alto que um projeto de software passa ao longo do tempo (análise, design , codificação, testes , etc.)
+
+.Modelo de ciclo de vida: abstração que agrupa processos de software com caracteristicas compartilhadas, com o tempo entre fases e artefatos
+criados
+
+.Processo de software : Série de etapas que uma pessoa ou organização segue para produzir um sistema de software especifico
+
+
+
+ESTRUTURA DO PROCESSO
+
+.Precisa ser adaptavel , pois não existe um processo prescritivo que seja melhor para todos os projetos
+
+.O ciclo de vida de Desenvolvimento de Software (SDLC) é a sequência de fases pelas quais um projeto de desenvolvimento de software passa
+
+.Modelos de ciclos de vida de desenvolvimento de softwares são categorias de processos de software que compartilham caracteristicas comuns.
+
+MODELOS MÉTODOS EM ENGENHARIA DE SOFTWARE 
+
+.Modelos possuem propriedades como completude , consistência e correção
+
+.A correção de erros em  modelos é verificada através de simulação ou revisão 
+
+.Os tópicos incluem modelos , tipos de modelos , análise de modelos , métodos de engenharia 
+
+DESENVOLVIMENTO CODE-AND-FIX
+
+.Processo empírico de tentativa e erro , não sendo formalmente um modelo , mas amplamente utilizado 
+
+.Inicia com análise de requisitos suficiente para começar a codificar , sendo retrabalhaado até entender todos os requisitos
+
+.Adequado para programas pessoais , pequenos e simples , sem planos de expansão futura
+
+MODELO WATERFALL (CASCATA OU CACHOEIRA)
+
+.Abordagem sequencial e linear do ciclo de vida de desenvolvimento de software (SDLC)
+
+.Cada fase deve ser concluida completamente antes que a próxima fase possa começar
+
+.Popular no gerenciamento de projetos , com metas definidas para cada fase , não revisaveis após a conclusão
+
+MODELO WATERFALL (ANÁLISE DAS FASES)
+
+.Utilizado quando os requisitos são bem conhecidos , claros e fixos
+
+.A definição do produto é estavel e a tecnologia é entendida
+
+.Recursos amplos com experiência e projeto de curta duração
+
+MODELO ESPIRAL
+
+.Modelo orientado a riscos, que lida com eles no ínicio do ciclo de vida do software
+
+.As fases não são predeterminadas , sendo definidas após a análise de risco
+
+.É genérico o suficiente para acomodar outros padrões de desenvolvimento de software 
+
+UTILIZAÇÃO DO MODELO EM ESPIRAL
+
+.A avaliação de custos e riscos é importante
+
+.Projetos de médio a alto risco
+
+.Usuarios não tem certeza de suas necessidades
+
+MODELO INCREMENTAL - UTILIZAÇÃO
+
+.Requisitos são dividos em vários módulos independentes do ciclo de desenvolvimento de software
+
+.Desenvolvimento é realizado em etapas de projeto, implementação , teste/ verificação e manutenção
+
+.Um sistema de trabalho simples é implementado contendo apenas alguns recursos básicos para ser entregue ao cliente
+
+MODELO INCREMENTAL - UTILIZAÇÃO
+
+.Gera software de trabalho rapidamente e no inicio do ciclo de vida do software
+
+.Mais flexivel - menos dispendioso para alterar o escopo e os requisitos 
+
+.Cada iteração é um marco facilmente gerenciado
+
+MODELO PROTOTIPAGEM
+
+.Um protótipo é construido , testado e retrabalhado até que um protótipo aceitável seja alcançado
+
+.Funciona melhor em cenários em que os requisitos do projeto não são conhecidos 
+
+.É um método iterativo , de tentativa e erro - empírico - que ocorre entre o desenvolvedor e o cliente
+
+MODELO DE PROTOTIPAGEM - TIPOS
+
+.Protótipo de lançamento rápido : Desenvolvido rapidamente para mostrar como o requisito será visualmente
+
+.Protótipo evolutiva: O protótipo desenvolvido é aprimorado de forma incremental com base no feedback do cliente
+
+.Protótipo incremental : O produto é fracionado em diferentes pequenos protótipos e que são desenvolvidos individualmente
+
+MODELO DE PROTOTIPAGEM - BOAS PRÁTICAS 
+
+.Utilizar a prototipagem quando os requisitos não estiverem claros 
+
+.Os usuarios e designers devem estar cientes dos problemas e das armadilhas da prototipagem
+
+MODELO RAD - DESENVOLVIMENTO RÁPIDO DE APLICATIVOS
+
+.Enfatiza o software de trabalho e feedback do usuario sobre o planejamento rigoroso e registro de requisitos
+
+.O feedback dos usuarios deve ser constante
+
+.Testar maciçamente até que o sistema funcione tal como espera-se nos requisitos
+
+MODELO RAD - FASES DE UTILIZAÇÃO
+
+.O desenvolvimento de cada módulo envolve etapas básicas : análise , projeto , codificação e teste
+
+.RAD funciona bem quando você precisa fazer algo rapidamente , com prazo apertado
+
+.Se você possui um grupo de usuarios que podem fornecer um feedback consistente , o RAD é um ótimo modelo a seguir 
+
+  

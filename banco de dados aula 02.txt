@@ -1,0 +1,79 @@
+BANCO DE DADOS AULA 02
+
+INSERINDO REGISTROS
+
+->A sintex geral do comando INSERT é explicada , mostrando como especificar as colunas
+e os valores
+
+UPDATE e DELETE 
+
+->O comando UPDATE é utilizado para modificar linhas existentes em uma tabela
+
+->O comando DELETE é utilizado para remover linhas existentes em uma tabela
+
+->É importante verificar os momes das colunas com o comando DESCRIBE e confirmar
+a operação de atualização com SELECT antes de executar o update ou DELETE 
+
+RENAME E CREATE TABLE AS SELECT
+
+->O comando RENAME é utilizado para alterar o nome de tabelas 
+
+->O comando CREATE TABLE AS SELECT cria uma nova tabela com a estrutura e os
+dados de uma consulta SELECT
+
+SELECT
+
+->O comando SELECT permite selecionar e manipular informações armazenadas no
+banco de dados para visualização
+
+->É possivel selecionar todas as colunas de uma tabela (usando o SELECT) ou
+colunas especificas 
+
+->O comando SELECT pode ser usado para exibir expressões aritméticas e atribuir 
+apelidos (alias) às colunas 
+
+CLAUSULA WHERE 
+
+->A cláusula where especifica condições para o comando select , utilizando
+operadores como =,<>, >, <, >= e <=
+
+->Valores alfanuméricos e datas na cláusula where devem estar entre aspas simples 
+
+->São apresentados operadores SQL como BETWEEN....AND....IN (lista), LIKE e IS NULL
+para refinar as consultas
+
+OPERADORES SQL
+
+->O operador BETWEEN compara valores dentro de um intervalo , incluindo
+os limites
+
+->O operador IN compara um valor com uma lista de valores especificados
+
+->O operador LIKE é usado para comparar parâmetros alfanuméricos , utilizando 
+o caractere % como coringa
+
+OPERADOR IS NULL E EXPRESSÕES NEGATIVAS
+
+->O operador IS NULL verifica se um campo contém um valor nulo
+
+->Expressões negativas , como NOT BETWEEN, NOT IN, NOT LIKE, e IS NOT NULL,
+permitem negar as condições de busca 
+
+MULTIPLAS CONDIÇÕES E CLAUSULA ORDER BY
+
+->O operador AND e OR são usados para combinar multiplas condições em uma 
+consulta
+
+->A clausula ORDER BY permite ordenar as linhas retornadas por uma consulta
+
+->É possivel inverter a ordem de ordenação usando o comando DESC
+
+ORDENAÇÃO E CONCLUSÃO 
+
+->É possivel ordenar por várias colunas na clausula ORDER BY, especificando a
+ordem para cada coluna
+
+->A clausula ORDER BY não altera a ordem dos dados armazenados no banco de dados
+
+->São fornecidas indicações de materiais complementares e referencias para 
+aprofundar o conhecimento sobre os assuntos abordados,  

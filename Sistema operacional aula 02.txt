@@ -1,0 +1,161 @@
+sistemas operacionais aula 02
+
+GERENCIADOR DE PROCESSOS 
+
+-> Para resolver as dificuldades de multiprogramação e tempo compartilhado ,há
+cinco assuntos que todo SO deve considerar 
+
+-> Os SO multiprogramados proporciona melhor aproveitamento da CPU , tendo ela um
+ou vários processadores dividindo o tempo de tela
+
+-> Para que vários programas rodem em fila , com intervalo de tempo e com trocas
+tão rápidas que acabam dando a ilusão ao usuario que todos estão sendo executado
+simultaneamente
+
+-> Independentemente se trabalham fisicamente em paralelo ou logicamente em paralelo
+por meio do SO
+
+->A execução de um processo é o conjunto de dados necessários a sua execução, como a
+identificação do processo chamado de pid
+
+->Os conteudos dos registradores dos processadores , como o contador de programa
+ou simplesmente PC  (-Program counter, os ponteiros -Stack pointer)
+
+->As variaveis e dados armazenados na memória , a lista de arquivos que são utilizados,
+tempo de CPU disponivel , prioridade de execução , eventos que o processo pode esperar
+entre outros
+
+->Essas informações são fundamentais para que o processo interrompido pelo escalonador 
+possa voltar a executar a partir do ponto de parada sem perda de dados ou inconsistencias
+
+->As informações são armazenadas em estruturas de dados conhecidas como tabelas de
+processo ou descritor de processos , ou bloco descritor de programa 
+
+->O bloco descritor (BCP)consiste em uma estrutura de dados contendo informações importantes
+sobre o processo  
+
+->A troca entre processos concorrentes pela disputa da CPU se chama mudança de contexto
+
+->Quando o processo é interrompido pelo sistema operacional , ele é salvo no BCP
+
+->Ao retornar a execução , o SO restaura o contexto do processo , que continua sua 
+execução como se nao tivesse ocorrido nada
+
+->Um dos requisitos do SO é intercalar ou fazer a mudança de contexto entre processos
+visando maximizar a utilização da CPU 
+
+->Fornecendo um tempo de resposta razoavel 
+
+->O SO deve evitar que os processos entre em deadlock 
+
+->E permitir a criação e comunicação entre processos , o qual apos sua criação
+pode assumir alguns estados
+
+->Os primeiros SO multiprogramados tinham a previsão de poucos estados como:
+
+.criação
+.execução
+.pronto
+.bloqueado 
+.encerrado
+
+->Quando um usuario solicita a execução de um programa , SO gerará um processo
+com a identificação do programa 
+
+->E deverá criar o contexto de execução a fim de poder escalonar (colocar em execução)
+
+->Quando o SO conclui todos os preparativos para rodar o processo , ele muda seu estado
+do processo de criação ou indefinido para pronto que este fica a disposição  do escalonador
+do kernel do SO
+
+->O software escalonador cuidará dos processos definindo quem deverá permanecer em execução
+
+->O escalonador dá uma fatia de tempo iguais a todos os processos mudanod o estado do processo
+de pronto para em execução
+
+->Quando o processo está em execução , tem todos os recursos da CPU para utilizar
+
+->Significando que está em estado progressivo tendo um normal andamento
+
+->Enquanto não ocorrer uma chamada de entrada e saída ou enquanto não findar sua fatia
+de tempo o processo deverá permanecer nesse estado
+
+->Terminando sua cota de T. para execução , o escalonador o interrompe, calocando-o no estado pronto
+
+->O processo apenas não esta em execução porque a CPU está sendo usada por outro processo
+
+->Quando chega sua vez novamente de executar , o escalonador invoca ou acorda o processo permitindo sua 
+continuidade
+
+->Um processo é bloqueado se os dados de entrada e saída , não estiverem disponíveis
+
+->Ou a espera da ocorrencia de um evento , ou não poder continuar a execução ou andamento 
+progressivo
+
+->O processo entra em estado de bloqueado informando o escalonador que entrou em espera 
+
+->Enviando um sinal solicitando que outro processo entre em execuçao ou por decisão
+do escalonador
+
+->O processo é desbloqueado por eventos externos como chegada de dados ou sinal de outro processo ,
+passando para o estado de pronto
+
+PARÂMETRO DE ESCALONAMENTO
+
+->Um sistema multitarefa , varios programas compartilham a mesma CPU 
+
+->Em certo tempo , apenas um processo executará 
+
+->Varios processos estarão a espera da sua fatia de tempo
+
+->A parte do SO que decide qual processo entre os prontos deve ganhar direito a CPU é
+chamado escalonador de processor ou scheduler
+
+->O escalonador de um SO tem duas classificações:
+
+PREEMPTIVO -> Se o processo em execução na CPU puder ser interrompido para a execução de outro processo
+
+->É utilizada nos sistemas multitarefas para garantir que todos os processos progridam 
+a fim de evitar que  um processo monopolize a CPU
+
+NÃO PREEMPTIVO -> Se durante a execução de um processo a CPU não puder ser liberada
+para outro processo 
+
+ALGUNS CRITÉRIOS DEVEM SER CONSIDERADOS PARA A IMPLEMENTAÇÃO DE UM BOM ALGORITMO
+DE ESCALONAMENTO , SENDO ELES:
+
+JUSTIÇA -> Garantir que cada processo tenha direito de acesso a CPU
+
+EFICIÊNCIA - > Maximizar a utilização da CPU
+
+TEMPO DE RESPOSTA -> Minimizar o tempo de resposta para aplicações interativas
+
+-> É o tempo decorrido entre o momento no qual um usuario submete uma tarefa ao
+sistema e instante que ele recebe de volta seus resultados
+
+THROUGHTPUT OU VASÃO -> Maximizar o número de tarefas processadas por unidade de tempo
+
+TURNAROUND OU TEMPO DE UTILIZAÇÃO DA CPU -> A gestão estratégica do tempo de utilização
+da CPU por job procura minimizar o tempo de execução das tarefas do tipo lote
+
+->Um dos algoritmos de escalonamento mais conhecidos é p FIFO (first in first out), o primeiro a entrar
+na fila é o primeiro a sair 
+
+->Em um SO do tipo FIFO os processos são alocados na fila e retirados por ordem 
+de chegada 
+
+->Neste algoritmo , o processo é selecionado a partir da sua chegada 
+
+->O primeiro a chegar é o primeiro a ser servido daí vem o nome first... 
+
+->Os processos maiores fazem os processos menores esperar em demasia devido a igualdade total
+entre tarefas , aqueles mais importantes não tem acesso privilegiado à CPU
+
+->Pode ser utilizado em sistemas Batch
+
+->Outro algoritmo de escalonamento é o chamado Round Robin ou circular
+
+->Onde o processo é colocado a fim de executar na ordem em que fica pronto para
+execução , apenas por uma fatia de tempo
+
+ 

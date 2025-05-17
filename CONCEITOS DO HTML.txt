@@ -1,0 +1,216 @@
+CONCEITOS DO HTML
+
+AMBIENTE CLIENTE / SERVIDOR
+
+CLIENTE -> CONEXÃO > SERVIDOR (SERVIDOR WEB , PROTOCOLO HTTP)
+
+CLIENTE : .HTML;
+          .CSS;
+          .Javascript;
+          .XML
+
+SERVIDOR : .Banco de Dados
+           .JSP
+           .ASP.NET.
+
+O QUE É HTML?
+
+->É uma rede de recursos e serviços de informação
+
+->Ela serve-se de três mecânismos 
+
+->Um esquema uniforme de atribuição de nomes, de forma a se localizar os recursos
+web (ex: URLs)
+
+->Protocolos , para o acesso aos recursos nomeados através da web (ex: HTTP)
+
+->Hipertexto, para uma navegação mais fácil através dps referidos recursos (ex: HTML)
+
+->Os laços entre três mecanismos evidenciam-se através desta especificação
+
+URLS -> Todos os recursos disponiveis na web possuem um endereço, o qual poderá
+ser codificado por um identificador de recursos universal , ou "URL" 
+
+->As URLS são de uma forma geral constituidos por três partes:
+
+->O esquema de nomeação do mecanismo usado para se ter acesso a outro recurso
+
+->O nome da máquina de hospedagem desse recurso
+
+->O nome do próprio recurso , atribuido na qualidade de trajeto (path)
+
+EXEMPLOS DE URLs
+
+->Páginas destinadas a relatórios técnicos da w3c: http://wwww3.org/TR/ 
+
+->URL referente a caixa postal: <a href=mailto:alexander_gobbato@yahoo.com.br>
+
+->identificadores de fragmentos : http://somesite.com/html/top.html/section_2
+
+No HTML , os URL são usados para :
+
+->Fazer uma ligação a um outro documento ou recurso , (ver os elementos A e link)
+
+->Fazer uma ligação a uma folha de estilo ou script (Ver os elementos link e SCRIPT)
+
+->Incluir uma imagem , objeto ou applet numa página , (ver os elementos IMG, OBJECT
+, APPLET  e INPUT;)
+
+->Criar um mapa de imagens (ver os elemetos MAP e AREA);
+
+->Submeter um formulário (ver FORM)
+
+->Citar uma referencia externa (ver os elemetos Q , BLOCKQUOTE , INS e DEL)
+
+->Criar um documento com molduras (ver os elementos FRAME e IFRAME)
+
+->Fazer  referencias a coevnções de metadados descrevendo um documento (ver o
+elemento HEAD)
+
+W3C -> Orgão responsável por recomendar padrões de desenvolvimento para a internet
+
+-> O HTML é a linguagem de publicação usada pela word wild web
+
+-> O HTML dá aos autores a possibilidade de :
+
+->Publicar documentos online contendo cabeçalhos , texto , quadros e tabelas 
+, listas , fotos , etc
+
+->Recuperar ou retirar informações online , por intermédio de ligações de hipertexto
+, clicando num botão
+
+->Concepção de formulários para efetuar transações com serviços remotos , para
+o uso na busca de informação , efetuar reservas , encomenda de produtos etc.
+
+VERSÕES -> A versão mais importante foi o html 4.01 que foi publicado como
+uma recomendação do w3c em 1999, possui as mesmas versões do html 4.0.
+
+-> A especificação do html 5 teve inicio em 2008 e ainda esta em desenvolvimento
+
+->Ao abrir uma página html no navegador , ele ira interpretar as  tags , ou seja,
+irá fazer uma análise sintática , definindo como cada parte do texto será apresentada
+
+-> Problema comum é a compatibilidade entre os navegadores
+
+MOTORES DE RENDERIZAÇÃO -> É o mecanismo utilizado pelos navegadores para processar 
+o código das páginas web
+
+->Os principais motores dos principais navegadores são 
+
+->Webkit (é o mais compativel com html 5 ) - safari, chrome;
+
+Gecko -> firefox
+
+Trident -> Internet explorer 
+
+->Devemos sempre procurar deixar nossos códigos compativeis com esses motores
+para que possamos atingir o maior número possivel de usuarios
+
+HTML Markup Tag -> As marcações de tags HTML são geralmente chamadas de tags
+HTML
+
+-> As palavras chaves estão marcadas entre os simbolos <e> como <html>
+
+->Geralmente em pares como <b> e </b>
+
+->A primeira tag do par é tag inicial e a segunda tag a tag final
+
+REGRAS HTML TAG
+
+->Tags HTML consistem em comandos que aparecem entre colchetes angulares(<>)
+
+->Tags HTML não são case sensitive 
+
+->Tags HTML quase sempre vêm em pares
+
+->Texto entre <HTML> e descreve a página web
+
+->O texto entre <body> e </body> é exibido como cabeçalho
+
+->O texto entre <p> e </p> é exibido como parágrafo 
+
+DOCUMENT TYPE -> O elemento especifica o tipo de documento (DTD), como página de uso restrito
+de HTML e CSS
+
+-> O doctype é a maneira de você dizer para qualquer navegador como ele deve
+agir ao ler seu código HTML
+
+->Porque cada browser tem um padrão próprio de renderizar o HTML sem o DOCTYPE
+
+->o STRICT é o "melhor" uma vez que ao dizer para um browser renderizar com ele,
+você esta dizendo que seguirá rigorosamente os padrões
+
+->O TRANSITIONAL você diz ao browser que seu código está em transição, não
+necessáriamente seguirá rigorosamente os padrões , mas não fará um ninho de ratos
+
+->Já o frameset , será para renderizar os arcaicos Frames
+
+DOCUMENTO PRINCIPAL
+
+O <html> é o elemento principal do documento HTML
+
+->Ele contém outros elementos como
+
+<head> </head> tags;
+<title> </title> tags;
+<body> /body> tags.
+
+<title> Fornece o título do documento que aparece o topo do browser
+
+-> O elemento <body> contém todas as informações do documento, ele vem depois 
+do cabeçalho e deve ser fechado, alguns atributos utilizados
+
+BGCOLOR: Define o valor da cor 
+
+BACKGROUND: Permite que você especifique um arquivo gráfico para utilizar como
+imagem de fundo:
+
+->Fornece um localizador de recursos uniforme (URL) de uma pasta de imagem 
+para ser utilizada como fundo de tela
+
+->Se a imagem for salva em outro lugar, você tem que digitar o endereço completo
+que aponta para a imagem
+
+LINK : Permite que você especifique a cor em que hiperlinks de texto não visitados 
+
+VLINK: Permite que você especifique a cor na qual visitou 
+
+ALINK: Permite que você especifique a cor enquanto os usuarios clicam nos links
+
+CRIAÇÃO DE LINKS 
+
+A tag <a> define um hiperlink que é usado para ligar uma página a outra
+
+o atributo mais importante do elemento é o atributo HREF, que indica o destino
+do link
+
+a tag <table> define uma tabela em HTML
+
+-><table> consiste em um elemento para indicar a linha e um elemento <td> para
+indicar a célula
+
+<table border='1'>
+<tr>
+<td> linha 1, célula1</td>
+</tr>
+<tr>
+<td> linha2, célula 1</td>
+</tr>
+</table>
+
+CRIAÇÃO DE LISTAS
+
+<U L> - Lista não ordenada
+<ol> - Lista ordenada
+<li> - Item de lista
+
+LISTAS <ul>
+            <li> café </li>
+            <li> Leite </li>
+       </ul>
+
+<ol>
+   <li>café</li> 
+   <li>leite</li> 
+</ol>
+

@@ -1,0 +1,145 @@
+IMPLEMENTANDO O MODELO RELACIONAL
+
+NORMALIZAÇÃO -> É um processo para avaliar e corrigir estruturas de tabela para minimizar
+redundancias de dados
+
+->Reduzindo, assim, a probabilidade de anomalias de dados
+
+->O processo de normalização deve ocorrer logo após a etapa de criação do modelo conceitual
+do banco de dados 
+
+->A normalização funciona por meio de uma série de estagios chamadados formas Normais
+
+->Os três primeiros estágios são descritos como PRIMEIRA FORMA NORMAL (1NF)
+
+->Segunda forma normal (2NF)
+
+->Terceira forma normal(3NF) 
+
+IMPORTANTE -> Um problema obvio com informações redundantes é que usamos mais memória do que
+é necessário
+
+->A redundancias é um exemplo de uma anomalia que pode ocorrer, em um SGBD do modelo relacional
+
+A NECESSIDADE DE NORMALIZAÇÃO ->Existem duas situações comuns em que os projetistas de banco
+de dados usam a normalização:
+
+->ao projetar uma nova estrutura de banco de dados com base nos requisitos de negocios dos
+usuarios finais
+
+->o projetista construirá um modelo de dados usando o diagrama de ER(DER)
+
+->apos a conclusão do projeto inicial, o projetista pode usar a normalização para analisar
+as relações que existem entre os atributos dentro de cada entidade, para determinar se a 
+estrutura pode ser melhorada por meio da normalização
+
+->os projetistas dos bancos são frequentemente solicitados a modificar estruturas de dados
+existentes que podem ser na forma de arquivos simples , planilhas ou estruturas de banco de
+dados mais antiga
+
+->por meios de análise das relações entre os atributos ou campos na estrutura de dados, o 
+projetista de banco de dados pode utilizar o processo de normalização para melhorar a 
+estrutura de dados existentes para criar um projeto de banco de dados apropriado
+
+ANOMALIAS -> Existem três tipos de anomalias que ocorrem quando o banco de dados não é normalizado
+estas são:
+
+->Inserção
+->Atualização
+->Anomalia de exclusão
+
+ANOMALIAS DE INSERÇÃO -> Não podemos armazenar os detalhes do empregado até que o projeto seja
+atribuido
+
+ANOMALIAS DE ATUALIZAÇÃO-> Se o nome do projeto manhattan precisar ser alterado
+
+->Essa alteração deverá ser realizada em todos os quatro registros 
+
+ANOMALIAS DE EXCLUSÃO -> Se excluirmos o empregado 1, também perderemos as informações sobre
+ o projeto
+
+->Para superar essas anomalias, precisamos normalizar os dados
+
+->A chave primária de uma relação em um SGBD debe ser uma chave primária, mas pode haver várias
+chaves candidatadas para escolher 
+
+->Quando se fala de normalização, é irrelevante qual chave é escolhida como chave primária
+
+1 FORMA NORMAL (1FN) -. Definimos que uma tabela está na primeira forma normal 
+
+->se e somente se, todas as colunas possuem um único valor , e não existiam grupos repetitivos
+(colunas) em uma linha ou atributos compostos (Machado, 2014)
+
+->Para que uma tabella possa estar na 1FN, devemos seguir as seguintes regras :
+
+1-> Não devem existir colunas com dados repetidos ou similiares 
+2->Cada item de dados deve ser atômico(não possuir valores compostos)
+3->Cada linha deve ser única 
+4->Cada campo deve ter um nome exclusivo
+
+IMPORTANTE-> "ATOMICO" é o termo usado para descrever que um item de dados é unico e indivisivel
+
+EXEMPLO DE DADOS REPETIDOS 
+
+->Podemos afirmar que essas tabelas estão na primeira forma normal (1NF), dado que obedecem
+às seguintes regras:
+
+->Cada tabela tem uma chave primária
+
+->Cada nome de campo é exclusivo
+
+->Os dados são atomicos
+
+->Não possui campos repetidos / redundantes
+
+2 FORMA NORMAL -> Uma tabela está na segunda forma normal (2FN) se estiver na 1FN e não possuir
+campos que sejam funcionalmente dependentes de parte da chave primária (Machado, 2014)
+
+As regras para segunda forma normal são: 
+
+1 -> A tabela deve estar já na primeiro forma normal (1FN)
+
+2 -> Todos os atributos não-chave devem depender da chave primária completa, ou seja, 
+não contenham dependencia parcial
+
+IMPORTANTE -> Depende parcial ocorre quando uma coluna depende apenas de parte de uma chave
+primária composta (heuser, 2010)
+
+-> A razão dessa regras é garantir que não sejam armazenados dados redundantes no banco de dados
+
+3 FORMA NORMAL (3FN) -> Uma tabela encontra-se na terceira forma normal quando ,além de 
+estar na 2FN, não possua dependecias transitivas
+
+IMPORTANTE -> Dependencia transitiva ocorre quando uma coluna, além de depender da chave 
+primária da tabela , depende de outra coluna ou conjunto de colunas da tabela
+
+-> As regras para terceira forma normal (3FN)
+
+->Não existem atriubtos não-chave que dependem de outros atributos não-chave
+
+->A razão dessa regra é detectar ainda outras fontes de dados redundantes 
+
+->Se o valor de um atributo pode ser obtido simplesmente fazendo uso de outro atributo na
+tabela, então, ele não precisa estar na tabela
+
+->criar uma tabela para armazenar esse tipo de atributo, tornará o banco de dados menor
+
+-> A tabela Empregado obtida na segunda forma (2FN), ainda possui dados redundantes
+
+->Perceba, que o valor de hora de trabalho do empregado esta vinculado ao seu cargo ou seja,
+a informação do atributo "valor_hora" depende da informação contida no atriubto "Cargo_empregado"
+
+FORMA NORMAL BOYCE/CODD(FNBC) E 4 E 5 FORMA NORMAL (4FN , FN)
+
+->A decomposição da tabelas até 3FN é suficiente para obter o esquema de um banco de dados
+
+->Contudo deparamos com a forma normal boyce/codd(FNBC) e 4 e 5 forma normal (4FN, 5FN)
+
+->Definimos que uma tabela está na forma normal boyce/codd(FNBC) 4 e 5 forma normal(4FN , 5FN)
+
+->A tabela está na quarta forma normal (4FN) ,se nenhuma instancia da tabela do banco de dados
+contiver dois ou mais dados independentes e mutivalorados descrevendo a entidade relevante
+então ela estará na quarta forma normal 
+
+->Uma tabela está na quinta forma normal (5FN) somente se estiver em 4FN  e não puder ser
+decomposta em qualquer número de tabelas menores sem perda de dados

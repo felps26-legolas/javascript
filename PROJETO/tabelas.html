@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+
+body{background-color: gray;}
+
+table{width:100%;
+font-family:arial,helvethica;
+font-size:20px;
+border: 3px solid black ;
+border-radius: 8px;}
+
+tr{border: 15px solid black;
+border-radius:5px;}
+
+th{border: 3px solid black;
+border-radius:8px;
+background-color:white;}
+
+td{border:3px solid black;
+border-radius:8px;
+padding:5px;}
+
+input{width:90%;}
+
+button{padding:10px;
+border-radius:5px;
+border: 3px solid black;
+cursor:pointer;}
+
+button:hover{background-color: antiquewhite;}
+
+#separado{border:2px solid black;
+border-radius:3px;
+width:20%;}
+
+.afastar{text-align:center;
+margin:30px;}
+
+.container{align-items:center;
+display:flex;
+justify-content:center;
+margin:20px;}
+
+h2{text-align:center;}
+
+</style>
+
+</head>
+<body>
+
+<tittle>minha primeira página web utilizando mais tags</tittle>
+
+<h2>mecânismo de planilha</h2>
+
+<img src="montanha.JPG" alt="imagem de montanha">
+
+<div class="container">
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/qLZenOn7WUo?si=YFj3R3aojNiJcfMS" title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+allowfullscreen></iframe>
+</div>
+
+<table border="2">
+<thead>
+<tr>
+<th>nome</th>
+<th>cidade</th>
+<th>email<th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><input type="text" placeholder="digite seu nome.."></td>
+<td><input type="text" placeholder="digite sua cidade.."></td>
+<td><input type="email" placeholder="digite seu email.."></td>
+</tr>
+<tr>
+<td><input type="text" placeholder="digite seu nome.."></td>
+<td><input type="text" placeholder="digite sua cidade.."></td>
+<td><input type="email" placeholder="digite seu email.."></td>
+</tr>
+<tr>
+<td><input type="text" placeholder="digite seu nome.."></td>
+<td><input type="text" placeholder="digite sua cidade.."></td>
+<td><input type="email" placeholder="digite seu email.."></td>
+</tr>
+</tbody>
+</table>
+<div class="afastar">
+<input type="text" id="separado" placeholder="digite aqui...">
+<button onclick="pesquisar()">buscar</button>
+</div>
+
+</body>
+</html>
