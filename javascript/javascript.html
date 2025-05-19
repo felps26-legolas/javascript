@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+<script>
+
+function verificarpessoa() {let nome = document.getElementById("pessoa").value;
+
+let idade = document.getElementById("anos").value;
+
+idade= Number(idade);
+
+
+if (idade >= 18) {
+
+document.getElementById("resultado2").textContent = "você é maior de idade " + nome ; }
+
+ else {
+
+document.getElementById("resultado2").textContent = "você é menor de idade "  + nome ; 
+
+}
+
+
+ }
+
+function testevermelho() { let div = document.getElementById("caixa");
+
+div.style.backgroundColor = "red" ;}
+
+function testeazul() { let div = document.getElementById("caixa");
+
+div.style.backgroundColor = "blue" ;}
+
+
+function testeduplo() { let teste = document.getElementById("clique"); 
+
+alert ("clique duplo foi ativado!!!");
+
+
+}
+
+</script>
+
+<style>
+
+
+body{
+text-align:center;
+background-color: gray;
+padding:200px;
+display:flex-column;
+}
+
+#code{
+
+font-size: 50px;
+color: black;
+
+
+}
+
+#computer{
+
+font-size: 50px;
+color:black;
+
+}
+
+input{
+
+font-family: trebuchet MS;
+border-radius: 5px;
+width: 40%;
+text-align: center;
+color: black;
+padding:5px;
+
+}
+
+#button{
+
+border:2px solid black;
+border-radius:4px;
+justify-content:center;
+padding:8px;
+width: 150px;
+color: white;
+margin-top: 15px;
+background-color: black;
+width: 100%;
+
+}
+
+#button:hover {background-color: antiquewhite;
+cursor: timer;}
+
+p{
+
+font-family:trebuchet MS ;
+font-size:16px;
+color:black;
+border-bottom: 4px solid black;
+margin-top:5px;
+
+}
+
+div{
+
+padding:10px;
+color: white;
+font-family:courier new;
+
+}
+
+h2{font-family: trebuchet MS;
+border-bottom: 4px solid black;
+color:black;}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<h2> primeiros testes utilizando javascript</h2>
+
+
+
+<i class="material-icons" id="code">code</i><i class="material-icons" id="computer">computer</i>
+
+
+
+<p id="resultado1">digite seu nome abaixo</p>
+
+
+<input type="nome" id="pessoa"  class="form-control" placeholder="digite seu nome...">
+
+
+<p id="resultado2">digite sua idade abaixo</p>
+
+
+<input type="Number" id="anos" class="form-control" placeholder="digite sua idade...">
+
+
+<button onclick="verificarpessoa()" class="btn btn-default btn-primary" id="button">submit</button>
+
+
+
+
+</body>
+</html>
+
+
+
+
